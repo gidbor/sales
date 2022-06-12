@@ -1,10 +1,20 @@
 <div class="containerLogin">
   <div class="formLogin">
-    <h3>SALES V1.0</h3> <br>
-    <label>Email</label> <br>
-    <input class="form-control" type="email" placeholder="input your email" [(ngModel)]="usuario.email"><br>
-    <label>Password</label><br>
-    <input class="form-control" type="password" placeholder="input your password" [(ngModel)]="usuario.password"><br>
-    <button (click)="login()">Login</button>
+    <form class="formLoginContainer" action="">
+      <div class="titleForm">
+        <h3>SALES V1.0</h3>
+      </div>
+      <div class="inputForm1">
+        <label>Email</label>
+        <input class="form-control" type="email" placeholder="input your email" [(ngModel)]="usuario.email">
+      </div>
+      <div class="inputForm2">
+        <label>Password</label>
+        <input class="form-control" type="password" placeholder="input your password" [(ngModel)]="usuario.password">
+      </div>
+      <div class="inputButtonSubmit">
+        <button (click)="login()">Login</button>
+      </div>
+    </form>
   </div>
 </div>

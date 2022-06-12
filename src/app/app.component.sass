@@ -1,6 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap')
+
+$fontLogin: 'Ubuntu', sans-serif
+$fontLoginTitleWeight: 700
+$fontLoginLabelWeight: 400
+$fontLoginLableSize: 18px
+
 .containerLogin
-    display: flex
-    justify-content: center
-    align-items: center
-    width: 100vw
-    height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100vw
+  height: 100vh
+  background-image: url('/assets/kuala-lumpur-g5dbcbf2c5_1920.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+.formLogin
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 80%
+  height: 60%
+  -webkit-backdrop-filter: blur(16px) saturate(180%)
+  -webkit-backdrop-filter: blur(16px) saturate(180%)
+  background: rgba(255, 255, 255, 0.20)
+  border-radius: 12px
+  border: 1px solid rgba(255, 255, 255, 0.125)
+.formLoginContainer
+  width: 80%
+  height: 80%
+  display: flex
+  flex-direction: column
+  justify-content: start
+  gap: 20px
+.titleForm
+  flex: 0 1 100px
+  justify-content: center
+  h3
+    text-align: center
+    font-family: $fontLogin
+    font-weight: $fontLoginTitleWeight
+    color: #fff
+.inputForm1, .inputForm2, .inputButtonSubmit
+  display: flex
+  flex-direction: column
+  flex: 0 2 auto
+  gap: 5px
+  color: #fff
+  font-size: $fontLoginLableSize
+  label
+    font-family: $fontLogin
+    font-weight: $fontLoginLabelWeight
+  input
+    border: none
+    background: none
+    border-bottom: 1px solid #fff
+    color: #fff
+    font-size: $fontLoginLableSize
+    outline: none
+.inputButtonSubmit
+  display: flex
+  justify-content: center
+  flex-direction: row
+  button
+    background: #040939
+    width: 40%
+    color: #fff
+    border: none
+    padding: 5px 10px
+    font-size: $fontLoginLableSize
