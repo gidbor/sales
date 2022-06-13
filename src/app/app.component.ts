@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AuthService } from './services/auth.service';
+// import { AuthService } from './services/auth.service';
 
 @Component({
   selector: 'app-root',
@@ -9,18 +9,7 @@ import { AuthService } from './services/auth.service';
 export class AppComponent {
   title = 'sales';
 
-  usuario = {
-    email: '',
-    password: ''
-  }
 
-  constructor(private authService: AuthService){}
+  constructor(){}
 
-  login(){
-    console.log(this.usuario);
-    const {email, password} = this.usuario;
-    this.authService.loginWithGoogle(email, password).then(res => {
-      console.log(res);
-    });
-  }
 }

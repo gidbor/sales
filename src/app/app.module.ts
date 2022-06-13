@@ -7,10 +7,13 @@ import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { UsersModule } from './components/users/users.module';
+import { LoginComponent } from './components/Auth/login/login.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
