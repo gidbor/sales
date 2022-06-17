@@ -1,1 +1,22 @@
-<p>createuser works!</p>
+<div class="formUserContainer">
+  <form
+    class="formUser"
+    action=""
+    (ngSubmit)="onSubmit()"
+    [formGroup]="createUserForm"
+  >
+    <div>
+      <label for=""></label>
+      <input type="text" formControlName="nameUser" />
+    </div>
+    <div>
+      <label for=""></label>
+      <input type="text" formControlName="lastNameUser" /></div>
+    <div>
+      <label for=""></label>
+      <input type="number" formControlName="ageUser" /></div>
+    <div>
+      <input type="submit" value="enviar" />
+    </div>
+  </form>
+</div>
