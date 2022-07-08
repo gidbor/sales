@@ -8,7 +8,7 @@ import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { UsersModule } from './components/users/users.module';
 import { LoginComponent } from './components/Auth/login/login.component';
-
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 
 @NgModule({
   declarations: [
@@ -19,6 +19,7 @@ import { LoginComponent } from './components/Auth/login/login.component';
     BrowserModule,
     FormsModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
     AppRoutingModule,
     UsersModule
   ],

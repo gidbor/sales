@@ -2,7 +2,7 @@
   <form
     class="formUser"
     action=""
-    (ngSubmit)="onSubmit()"
+    (ngSubmit)="createUser()"
     [formGroup]="createUserForm"
   >
     <div>
@@ -11,10 +11,12 @@
     </div>
     <div>
       <label for=""></label>
-      <input type="text" formControlName="lastNameUser" /></div>
+      <input type="text" formControlName="lastNameUser" />
+    </div>
     <div>
       <label for=""></label>
-      <input type="number" formControlName="ageUser" /></div>
+      <input type="number" formControlName="ageUser" />
+    </div>
     <div>
       <input type="submit" value="enviar" />
     </div>
